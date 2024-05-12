@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freeLink.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="index.css" rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body style="background-color:#F2FDFF;">
+    <!--NAV BAR-->
+    <nav class="navbar" style="background-color: #F2FDFF;">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">freeLink.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            style="margin-left: 650px"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  style="padding: 10px"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="project.html"
+                  style="padding: 10px"
+                  >Project</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="findTalent.html"
+                  style="padding: 10px"
+                  >FindTalent</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="login.html"
+                  style="padding: 10px"
+                  >Login/SignUp</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style="padding: 10px"
+                >
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="aboutus.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contactus.html"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <!--END OF NAV BAR-->
+    
+    <title>Questionnaire</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Questionnaire</h1>
+      <form action="#" method="post">
+        <label for="name">1. What is your full name?</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">2. What is your email address?</label>
+        <input type="email" id="email" name="email" style="width:100%" required />
+        <br /><br />
+
+        <label for="phone">3. What is your phone number?</label>
+        <input type="text" id="phone" name="phone" required />
+        <br /><br />
+
+        <label for="reason">4. Why are you seeking financial aid?</label>
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+
+        <label for="emp">5. What is your employment status?</label>
+        <input type="text" id="emp" name="employment" required />
+
+        <label for="income">6. What is your annual household income?</label>
+        <input type="text" id="income" name="income" required />
+
+        <label for="expenses">7. What are your monthly expenses?</label>
+        <input type="text" id="expenses" name="expenses" required />
+
+        <label for="support"
+          >8. Do you receive any financial support from other sources?</label
+        >
+        <textarea id="support" name="support" rows="4" required></textarea>
+
+        <label for="how"
+          >9. How will your selected course help with your goals?</label
+        >
+        <textarea id="reason" name="reason" rows="4" required></textarea>
+        </form><center>
+        <a href="index.html"><button type="submit">Submit</button></a></center>
+    </div>
+  </body>
+</html>

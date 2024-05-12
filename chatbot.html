@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat with Assistant</title>
+</head>
+<body>
+    <div id="chat-history"></div>
+    <input type="text" id="user-message">
+    <button onclick="sendMessage()">Send</button>
+    <script>
+        const chatHistoryElement = document.getElementById("chat-history");
+        const userMessageInput = document.getElementById("user-message");
+
+        function sendMessage() {
+            const userMessage = userMessageInput.value;
+            userMessageInput.value = ""; // Clear input after sending
+
+            fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({message: userMessage})
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update chat history with user message and response
+                chatHistoryElement.innerHTML += `You: ${userMessage} <br>`;
+                chatHistoryElement.innerHTML += `Assistant: ${data.message} <br>`;
+            });
+        }
+    </script>
+</body>
+</html>
